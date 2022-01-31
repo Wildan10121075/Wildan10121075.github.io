@@ -1,0 +1,102 @@
+<html>
+    <head>
+    <title>Tugas14</title>
+    </head>
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <link rel="stylesheet" href="w3.css">
+    <body>
+
+        <div class="w3-container w3-animate-left">
+            <img src="atas.jpg" width="100%" height="30%">
+        </div>
+        <div class="w3-bar w3-black w3-animate-right">
+            <button class="w3-button-item w3-button" onclick="openFoto('Home')">Home</button>
+            <button class="w3-button-item w3-button" onclick="openFoto('Profile')">Profile</button>
+            <button class="w3-button-item w3-button" onclick="openFoto('FoodFG')">Food Photography</button>
+            <button class="w3-button-item w3-button" onclick="openFoto('LandscapeFG')">Landscape Photography</button>
+            <button class="w3-button-item w3-button" onclick="openFoto('PotraitFG')">Potrait Photography</button>
+            <button class="w3-button-item w3-button" onclick="openFoto('StreetFG')">Street Photography</button>
+        </div>
+        <div id="Home" class="w3-container w3-animate-zoom foto " style="display: none; margin-top: 8%;">
+            <center>
+            <h1>BELAJAR HTML DAN CSS</h1>
+            <h4>Mata Kuliah Pemrograman Web 1</h4>
+            <h4>Mata Kuliah Komputer IT-1</h4>
+            <h4>Universitas Komputer Indonesia</h4>
+            </center> 
+        </div>
+        <div id="Profile" class="w3-container w3-animate-top foto" style="display: none; margin-top: 8%;">
+            <center>
+            <form>
+                <table border="0">
+                    <p>
+                        <tr>
+                            <td>Nama</td>
+                            <td>: Wildan Permana</td>
+                        </tr>
+                        <tr>
+                            <td>NIM</td>
+                            <td>: 10121075</td>
+                        </tr>
+                        <tr>
+                            <td>Universitas</td>
+                            <td>: Universitas Komputer Indonesia</td>
+                        </tr>
+                        <tr>
+                            <td>Prodi</td>
+                            <td>: Teknik dan Ilmu Komputer</td>
+                        </tr>
+                        <tr>
+                            <td>Jurusan</td>
+                            <td>: Teknik Informatika</td>
+                        </tr>
+                        <tr>
+                            <td>Kelas</td>
+                            <td>: IF-2</td>
+                        </tr>
+                    </p>
+                </table>
+            </form>
+            </center>
+            </div>
+        </div>
+        <div id="FoodFG" class="w3-container w3-animate-fading foto " style="display: none;">
+            <center>
+            <img src="foodFG.jpg" alt="Gambar Makanan" width="30%">
+            <h2>Food Photography</h2>
+            <p>Food Photography adalah sebuah cabang seni fotografi yang bertujuan untuk mengabadikan segala macam bentuk dari makanan yang disetting sedemikian rupa sehingga mampu tergambarkan lezatnya makanan tersebut tanpa bercerita dan hanya gambar yang berbicara.</p>
+            </center>
+        </div>
+        <div id="LandscapeFG" class="w3-container w3-animate-bottom foto " style="display: none;">
+            <center>
+            <img src="landscapeFG.jpg" alt="Gambar Pemandangan" width="30%">
+            <h2>Landscape Photography</h2>
+            <p>landscape photography adalah menggambarkan luasnya bentangan alam dengan sudut ruang yang tak terbatas, jadi landscape photography itu sesuatu yang bisa didokumentasikan dalam sebuah foto. Foto landscape biasanya menangkap kehadiran alam tetapi juga dapat fokus pada buatan manusia.</p>
+            </center>
+        </div>
+        <div id="PotraitFG" class="w3-container w3-animate-top foto " style="display: none;">
+            <center>
+            <img src="potraitFG.jpg" alt="Gambar Orang" width="30%" height="60%">
+            <h2>Potrait Photography</h2>
+            <p>Foto Portrait diartikan sebagai lukisan, gambar, patung atau gambaran keindahan dari manusia,dimana ekspresi wajah begitu dominan untuk mengungkapkan persamaan, kepribadian, bahkan perasaan seseorang.</p>
+            </center>
+        </div>
+        <div id="StreetFG" class="w3-container w3-animate-zoom foto" style="display: none;">
+            <center>
+            <img src="streetFG.jpg" alt="Gambar Jalanan" width="30%" height="60%">
+            <h2>Street Photography</h2>
+            <p>Fotografi jalanan atau Street photography merupakan aliran fotografi dokumenter yang menampilkan subjek dalam kondisi terang di tempat umum atau publik. Jenis fotografi ini memanfaatkan teknik foto candid, tanpa izin dan sepengetahuan objek dalam menunjukkan sisi realita.</p>
+            </center>
+        </div>
+        <script> 
+            function openFoto(namaFoto) { 
+              var i; 
+              var x = document.getElementsByClassName("foto"); 
+              for (i = 0; i < x.length; i++) { 
+               x[i].style.display = "none";   
+              } 
+              document.getElementById(namaFoto).style.display = "block";   
+            } 
+        </script> 
+    </body>
+</html>
